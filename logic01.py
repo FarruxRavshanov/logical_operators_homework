@@ -8,7 +8,7 @@ def main(a,b,c):
     Returns:
         bool: answer
     """
-    d = a > b > c or c > b > a
+    d = a >= b >= c or c >= b >= a
     return d
 
 print(main(3, 4, 6))
