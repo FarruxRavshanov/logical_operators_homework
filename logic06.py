@@ -10,4 +10,4 @@ def main(a,b):
     z = a >= 0 and b < 0 or b >= 0 and a < 0
     return z
 
-print(main(3, -2))
+print(main(-3, -2))
