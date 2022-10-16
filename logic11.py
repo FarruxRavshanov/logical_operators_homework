@@ -6,7 +6,7 @@ def main(a):
     Returns:
         bool: answer
     """
-    g = a <= 100 <= 999
+    g = 100 <= a <= 999
     return g
 
 print(main(234))
