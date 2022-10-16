@@ -6,4 +6,7 @@ def main(a):
     Returns:
         bool: answer
     """
-    return
+    d = 10 <= a <= 99
+    return d
+
+print(main(777))
