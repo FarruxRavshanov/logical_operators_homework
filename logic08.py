@@ -7,4 +7,7 @@ def main(a,b):
     Returns:
         bool: answer
     """
-    return
+    s = a % 2 == 0 or b % 2 == 0
+    return s
+
+print(main(32, 43))
