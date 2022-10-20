@@ -9,4 +9,4 @@ def main(a):
     s = 10000 <= a <= 99999
     return s
 
-print(main(1234))
+print(main(1000))
