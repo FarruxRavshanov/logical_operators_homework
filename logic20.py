@@ -35,6 +35,6 @@ def main(n):
     else:
         count0 += 1
 
-    return count0 < count1
+    return count1 > count0
 
 print(main(1000))
