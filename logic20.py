@@ -37,4 +37,4 @@ def main(n):
 
     return count0 < count1
 
-print(main(1110))
+print(main(1000))
