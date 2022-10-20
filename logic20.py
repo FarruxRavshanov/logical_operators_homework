@@ -29,12 +29,18 @@ def main(n):
     else:
         count0 += 1
 
-    x4 = n // 1000
+    x4 = n // 1000 % 10
     if x4 == 1:
+        count1 += 1
+    else:
+        count0 += 1
+
+    x5 = n // 10000
+    if x5 == 1:
         count1 += 1
     else:
         count0 += 1
 
     return count1 > count0
 
-print(main(1000))
+print(main(10001))
