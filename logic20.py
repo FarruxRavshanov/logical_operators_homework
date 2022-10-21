@@ -32,3 +32,5 @@ def main(n):
     count1 += 1 == 1
 
     return count1 > count0
+
+print(main(11010))
