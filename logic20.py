@@ -31,3 +31,5 @@ def main(n):
     count1 += x4 == 1
 
     return count1 > count0
+
+print(main(1010))
