@@ -11,31 +11,26 @@ def main(n):
     count0 = 0
     count1 = 0
 
-    if n % 10 == 1:
-        count1 += 1
-    else:
-        count0 += 1
+    x1 = n  % 10
+    count0 += x1 == 0
+    count1 += x1 == 1
+    n //= 10
 
-    if n // 10 % 10 == 1:
-        count1 += 1
-    else:
-        count0 += 1
+    x2 = n  % 10 
+    count0 += x2 == 0 and n != 0
+    count1 += x2 == 1
+    n //= 10
 
-    if n // 100 % 10 == 1:
-        count1 += 1
-    else:
-        count0 += 1
+    x2 = n  % 10 
+    count0 += x2 == 0 and n != 0
+    count1 += x2 == 1
+    n //= 10
 
-    if n // 1000 % 10 == 1:
-        count1 += 1
-    else:
-        count0 += 1
-
-    if n // 10000 == 1:
-        count1 += 1
-    else:
-        count0 += 1
-
+    x2 = n  % 10 
+    count0 += x2 == 0 and n != 0
+    count1 += x2 == 1
+    n //= 10
+    
     return count1 > count0
 
-print(main(10101))
+print(main(1101))
